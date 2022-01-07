@@ -1,5 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: #212121;
+  background-color: white;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -9,62 +13,64 @@ body {
 .link {
   text-decoration: none;
 }
+
+:root {
+  --hover-color: #2196f3;
+  --contact-color: #757575;
+  --contact-footer-color: rgba(255, 255, 255, 0.6);
+  --title-studio-color: #ffffff;
+  --back-color: black;
+}
 /*--------- HEADER -------- */
 
 .header-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  background-color: white;
-  color: #212121;
 }
 
 .header-logo {
+  font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1, 19; /* identical to box height */
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  line-height: 1.19; /* identical to box height */
+  color: var(--hover-color);
 }
 
 .header-logo-boot {
   font-weight: bold;
   font-size: 26px;
-  line-height: 1, 19; /* identical to box height */
-  letter-spacing: 0.03em;
-  color: black;
+  line-height: 1.19; /* identical to box height */
+  color: #212121;
 }
 
 .header-mail {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--contact-color);
 }
 
 .header-tel {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--contact-color);
 }
 
 .header-link:hover,
 .header-link:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 .header-mail:hover,
 .header-mail:focus {
-  color: chocolate;
+  color: var(--hover-color);
 }
 
 .header-tel:hover,
 .header-tel:focus {
-  color: chocolate;
+  color: var(--hover-color);
 }
 
 /*---------TITLE-----------*/
@@ -72,12 +78,12 @@ body {
 .title-link {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36; /* or 136% */
+  line-height: 1.36; /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: black;
-  color: #ffffff;
+  background-color: var(--back-color);
+  color: var(--title-studio-color);
 }
 
 .title-btn {
@@ -88,13 +94,13 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: black;
+  background-color: var(--hover-color);
+  color: var(--title-studio-color);
 }
 
 .title-btn:hover,
 .title-btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: #188ce8;
 }
 
 /*---------MENU----------*/
@@ -102,16 +108,14 @@ body {
 .menu-btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 62; /* identical to box height, or 162% */
+  line-height: 1.62; /* identical to box height, or 162% */
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .menu-btn:hover,
 .menu-btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--hover-color);
+  color: var(--title-studio-color);
 }
 
 /*-------PRIOR--------*/
@@ -122,19 +126,13 @@ body {
 
 .prior-title {
   font-weight: bold;
-  font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
-  color: #212121;
 }
 
 .prior-after-title {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1, 71; /* or 171% */
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: 1.71; /* or 171% */
+  color: var(--contact-color);
 }
 
 /*--------WORK--------*/
@@ -142,10 +140,8 @@ body {
 .work-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 16;
+  line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 /*---------TEAM---------*/
@@ -153,108 +149,87 @@ body {
 .tiem-link {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 16;
+  line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .team-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 18; /* identical to box height */
+  line-height: 1.18; /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .team-after-title {
-  font-weight: normal;
   font-size: 16px;
-  line-height: 1, 18; /* identical to box height */
+  line-height: 1.18; /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--contact-color);
 }
 
 /*------------BEDGE--------------*/
 
-.bedge {
-  display: none;
-}
-
 .bedge-title {
   font-weight: bold;
   font-size: 18px;
-  line-height: 2, 0; /* identical to box height, or 200% */
+  line-height: 2; /* identical to box height, or 200% */
   letter-spacing: 0.06em;
-  color: #212121;
 }
 
 .bedge-after-title {
-  font-weight: normal;
   font-size: 16px;
-  line-height: 1, 87; /* identical to box height, or 187% */
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: 1.87; /* identical to box height, or 187% */
+  color: var(--contact-color);
 }
 
 /*------------FOOTER-------------*/
 
 .footer {
-  background-color: black;
+  background-color: var(--back-color);
 }
 
 .footer-logo {
   font-weight: bold;
   font-size: 26px;
-  line-height: 1, 19; /* identical to box height */
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  line-height: 1.19; /* identical to box height */
+  color: var(--hover-color);
 }
 
 .footer-logo-boot {
   font-weight: bold;
   font-size: 26px;
-  line-height: 1, 19; /* identical to box height */
-  letter-spacing: 0.03em;
+  line-height: 1.19; /* identical to box height */
   color: white;
 }
 
 .footer-item {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1, 71; /* or 171% */
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  font-style: normal;
+  line-height: 1.71; /* or 171% */
+  color: var(--title-studio-color);
 }
 
 .footer-mail {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1, 71; /* or 171% */
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71; /* or 171% */
+  color: var(--contact-footer-color);
 }
 
 .footer-tel {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1, 71; /* or 171% */
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71; /* or 171% */
+  color: var(--contact-footer-color);
 }
 
 .footer-item:hover,
 .footer-item:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 .footer-mail:hover,
 .footer-mail:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
 .footer-tel:hover {
-  color: #2196f3;
+  color: var(--hover-color);
 }
